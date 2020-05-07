@@ -31,7 +31,8 @@ function TodoItem({todo, index, onChange}) {
                 <input 
                     type = 'checkbox' 
                     style = { styles.checkbox } 
-                    onChange = { () => onChange(todo.id) }
+                    onChange = { () => onChange(todo.id) } 
+                    checked = {todo.completed && 'checked'}
                 />
                 <strong>{ index + 1 }</strong>
                 &nbsp;
